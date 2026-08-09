@@ -1,0 +1,38 @@
+main.py
+- Punto de entrada de la aplicación.
+- Inicializa la interfaz y comienza la ejecución.
+
+config.py
+- Contiene toda la configuración fija del programa.
+- Ruta de la marca de agua.
+- Carpeta de salida.
+- Tamaño, posición, margen y opacidad de la marca.
+- Formatos de imagen soportados.
+
+gui.py
+- Construye la interfaz gráfica.
+- Maneja la interacción con el usuario.
+- Inicia el procesamiento y muestra el progreso.
+- No contiene lógica de procesamiento de imágenes.
+
+processor.py
+- Coordina todo el flujo de trabajo.
+- Solicita el listado de imágenes.
+- Aplica la marca de agua a cada una.
+- Guarda los resultados.
+- Reporta el progreso a la interfaz.
+
+scanner.py
+- Busca imágenes dentro de la carpeta seleccionada.
+- Filtra según los formatos soportados.
+- Devuelve el listado de archivos.
+
+watermark.py
+- Carga la imagen y la marca de agua.
+- Calcula tamaño y posición de la marca.
+- Aplica la marca respetando la opacidad.
+- Devuelve la imagen resultante.
+
+resources.py
+- Gestiona el acceso a recursos internos (watermark.png, icon.ico, etc.).
+- Hace compatible el acceso a archivos al ejecutar desde Python o desde un .exe generado con PyInstaller.
